@@ -125,15 +125,15 @@ else
     --context failoverRole=${REGION1ROLE} \
     --context failoverRecord=${FAILOVERSUBDOMAIN} region1;
 
-  # Create application stack SECONDARY
-  export CDK_DEFAULT_REGION=${REGION2}
-  cdk deploy --clear
-  cdk synth --context domainName=${BASEDOMAIN} \
-  --context subdomainName=${SUBDOMAIN2} \
-  --context cidr=${CIDR2} \
-  --context keyName=${KEYPAIR2} \
-  --context failoverRole=${REGION2ROLE} \
-  --context failoverRecord=${FAILOVERSUBDOMAIN} region2
+  # # Create application stack SECONDARY
+  # export CDK_DEFAULT_REGION=${REGION2}
+  # cdk deploy --clear
+  # cdk synth --context domainName=${BASEDOMAIN} \
+  # --context subdomainName=${SUBDOMAIN2} \
+  # --context cidr=${CIDR2} \
+  # --context keyName=${KEYPAIR2} \
+  # --context failoverRole=${REGION2ROLE} \
+  # --context failoverRecord=${FAILOVERSUBDOMAIN} region2
   
 fi
 

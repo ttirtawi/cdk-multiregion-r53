@@ -3,17 +3,12 @@
     "Id": "/hostedzone/Z08802782A1BZCFO3C4RA",
     "Name": "awsbuilder.xyz."
   },
-  "availability-zones:account=452922823873:region=ap-southeast-1": [
-    "ap-southeast-1a",
-    "ap-southeast-1b",
-    "ap-southeast-1c"
-  ],
   "hosted-zone:account=452922823873:domainName=region1.awsbuilder.xyz:region=ap-southeast-1": {
-    "Id": "/hostedzone/Z10045973I61YHQ3FTBJL",
+    "Id": "/hostedzone/Z0543108N2DIYRBR3W14",
     "Name": "region1.awsbuilder.xyz."
   },
   "hosted-zone:account=452922823873:domainName=satekambing.awsbuilder.xyz:region=ap-southeast-1": {
-    "Id": "/hostedzone/Z046416817LO4GJVDLOFD",
+    "Id": "/hostedzone/Z01657811R2ODO1K9S7UK",
     "Name": "satekambing.awsbuilder.xyz."
   }
 }

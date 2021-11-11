@@ -30,7 +30,9 @@ const region1 = new regionalStack(app, 'region1', {
     region: process.env.CDK_DEFAULT_REGION 
   }
 });
-region1.addDependency(region1Subdomain);
+// region1.addDependency(region1Subdomain);
+// region1.addDependency(failoverDomain);
+
 
 const region2 = new regionalStack(app, 'region2', {
   env: {
@@ -38,4 +40,4 @@ const region2 = new regionalStack(app, 'region2', {
     region: process.env.CDK_DEFAULT_REGION 
   }
 });
-region2.addDependency(region2Subdomain);  
+// region2.addDependency(region2Subdomain);  

@@ -21,5 +21,17 @@ Below is the high level diagram for the stacks:
 Run the wrapper like this:
 
 ```
- bin/wrapper.sh --accountid 123456789012 --region1 ap-southeast-1 --region2 ap-northeast-1 --region1role PRIMARY --region2role SECONDARY --keypair1 mykeysing --keypair2 mykeytokyo --cidr1 172.11.0.0/24 --cidr2 172.13.0.0/24 --subdomain1 region1 --subdomain2 region2 --basedomain mybaseurl.xyz --failoversubdomain satekambing
+ bin/wrapper.sh --accountid 123456789012 \
+    --region1 ap-southeast-1 \
+    --region2 ap-northeast-1 \
+    --region1role PRIMARY \
+    --region2role SECONDARY \
+    --keypair1 mykeysing \
+    --keypair2 mykeytokyo \
+    --cidr1 172.11.0.0/24 \
+    --cidr2 172.13.0.0/24 \
+    --subdomain1 region1 \
+    --subdomain2 region2 \
+    --basedomain mybaseurl.xyz \
+    --failoversubdomain satekambing
 ```

@@ -1,23 +1,37 @@
 {
-  "hosted-zone:account=452922823873:domainName=awsbuilder.xyz:region=ap-southeast-1": {
+  "hosted-zone:account=452922823873:domainName=awsbuilder.xyz:region=ap-southeast-2": {
     "Id": "/hostedzone/Z08802782A1BZCFO3C4RA",
     "Name": "awsbuilder.xyz."
   },
-  "availability-zones:account=452922823873:region=ap-southeast-1": [
-    "ap-southeast-1a",
-    "ap-southeast-1b",
-    "ap-southeast-1c"
+  "availability-zones:account=452922823873:region=ap-southeast-2": [
+    "ap-southeast-2a",
+    "ap-southeast-2b",
+    "ap-southeast-2c"
   ],
-  "hosted-zone:account=452922823873:domainName=region1.awsbuilder.xyz:region=ap-southeast-1": {
-    "Id": "/hostedzone/Z0543108N2DIYRBR3W14",
-    "Name": "region1.awsbuilder.xyz."
+  "hosted-zone:account=452922823873:domainName=sydneymain.awsbuilder.xyz:region=ap-southeast-2": {
+    "Id": "/hostedzone/Z079438315NYKQ71CQF8N",
+    "Name": "sydneymain.awsbuilder.xyz."
   },
-  "hosted-zone:account=452922823873:domainName=satekambing.awsbuilder.xyz:region=ap-southeast-1": {
-    "Id": "/hostedzone/Z01657811R2ODO1K9S7UK",
-    "Name": "satekambing.awsbuilder.xyz."
+  "hosted-zone:account=452922823873:domainName=myapp.awsbuilder.xyz:region=ap-southeast-2": {
+    "Id": "/hostedzone/Z07865262Y6GBTL1P0W53",
+    "Name": "myapp.awsbuilder.xyz."
   },
-  "hosted-zone:account=452922823873:domainName=region2.awsbuilder.xyz:region=ap-southeast-1": {
-    "Id": "/hostedzone/Z00156132C9FM6YGBD24D",
-    "Name": "region2.awsbuilder.xyz."
+  "hosted-zone:account=452922823873:domainName=awsbuilder.xyz:region=ap-northeast-2": {
+    "Id": "/hostedzone/Z08802782A1BZCFO3C4RA",
+    "Name": "awsbuilder.xyz."
+  },
+  "availability-zones:account=452922823873:region=ap-northeast-2": [
+    "ap-northeast-2a",
+    "ap-northeast-2b",
+    "ap-northeast-2c",
+    "ap-northeast-2d"
+  ],
+  "hosted-zone:account=452922823873:domainName=seoulbackup.awsbuilder.xyz:region=ap-northeast-2": {
+    "Id": "/hostedzone/Z064285523QT6F5HZ9EJW",
+    "Name": "seoulbackup.awsbuilder.xyz."
+  },
+  "hosted-zone:account=452922823873:domainName=myapp.awsbuilder.xyz:region=ap-northeast-2": {
+    "Id": "/hostedzone/Z07865262Y6GBTL1P0W53",
+    "Name": "myapp.awsbuilder.xyz."
   }
 }

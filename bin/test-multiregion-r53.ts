@@ -9,25 +9,25 @@ const app = new cdk.App();
 const region1Subdomain = new HostedZoneStack(app, 'region1Subdomain', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION 
+    region: process.env.CFREGION 
   }
 });
 const region2Subdomain = new HostedZoneStack(app, 'region2Subdomain', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION 
+    region: process.env.CFREGION 
   }
 });
 const failoverDomain = new HostedZoneStack(app, 'failoverDomain', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION 
+    region: process.env.CFREGION 
   }
 });
 const region1 = new regionalStack(app, 'region1', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION 
+    region: process.env.CFREGION 
   }
 });
 // region1.addDependency(region1Subdomain);
@@ -37,7 +37,7 @@ const region1 = new regionalStack(app, 'region1', {
 const region2 = new regionalStack(app, 'region2', {
   env: {
     account: process.env.CDK_DEFAULT_ACCOUNT, 
-    region: process.env.CDK_DEFAULT_REGION 
+    region: process.env.CFREGION 
   }
 });
 // region2.addDependency(region2Subdomain);  

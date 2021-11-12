@@ -104,9 +104,11 @@ else
   echo ${BASEDOMAIN};
   echo ${FAILOVERSUBDOMAIN};  
   echo ""
-  export CDK_DEFAULT_REGION=${REGION1}
+  
+  export CFREGION=${REGION1}
   export CDK_DEFAULT_ACCOUNT=${ACCOUNTID}
   export APP="npx ts-node test-multiregion-r53.ts" 
+
   # Create subdomain
   cdk deploy --context domainName=${BASEDOMAIN} --context subdomainName=${SUBDOMAIN1} region1Subdomain
   cdk context --clear
@@ -118,7 +120,8 @@ else
 
   # Create application stack PRIMARY
   cdk context --clear
-  cdk deploy --context domainName=${BASEDOMAIN} \
+  cdk deploy --require-approval never \
+    --context domainName=${BASEDOMAIN} \
     --context subdomainName=${SUBDOMAIN1} \
     --context cidr=${CIDR1} \
     --context keyName=${KEYPAIR1} \
@@ -126,9 +129,9 @@ else
     --context failoverRecord=${FAILOVERSUBDOMAIN} region1;
 
   # Create application stack SECONDARY
-  export CDK_DEFAULT_REGION=${REGION2}
-  env | grep CDK_DEFAULT_REGION
-  CDK_DEFAULT_REGION=${REGION2} npx cdk deploy --context domainName=${BASEDOMAIN} \
+  export CFREGION=${REGION2}
+  cdk deploy --require-approval never \
+  --context domainName=${BASEDOMAIN} \
   --context subdomainName=${SUBDOMAIN2} \
   --context cidr=${CIDR2} \
   --context keyName=${KEYPAIR2} \

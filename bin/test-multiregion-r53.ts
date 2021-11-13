@@ -3,6 +3,7 @@ import 'source-map-support/register';
 import * as cdk from '@aws-cdk/core';
 import { HostedZoneStack } from '../lib/newHostedZone';
 import { regionalStack } from '../lib/test-multiregion-r53-stack';
+import { sslCertStack } from '../lib/sslCert';
 
 const app = new cdk.App();
 
@@ -41,3 +42,11 @@ const region2 = new regionalStack(app, 'region2', {
   }
 });
 // region2.addDependency(region2Subdomain);  
+
+
+const testSSL = new sslCertStack(app, 'ssl', {
+  env: {
+    account: process.env.CDK_DEFAULT_ACCOUNT,
+    region: process.env.CFREGION
+  }
+})

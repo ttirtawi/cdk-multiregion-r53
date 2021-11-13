@@ -17,6 +17,11 @@ Below is the high level diagram for the stacks:
 
 ![multiregion-route53failover.drawio.png](multiregion-route53failover.drawio.png)
 
+As prerequisite you must have CDK bootstrap in the first place, run the following command on each region:
+
+```
+cdk bootstrap aws://<AWS_ACCOUNT_ID>/<AWS_REGION>
+```
 
 Run the wrapper like this:
 
